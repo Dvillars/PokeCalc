@@ -1,0 +1,19 @@
+{
+  "name": "PokeCalc",
+  "description": "pokemon damage calculator",
+  "main": "",
+  "authors": [
+    "Derek Villars",
+    "Elise St Hilaire",
+    "gk"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
