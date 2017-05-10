@@ -14,5 +14,8 @@ namespace PokeCalc.Models
         public int PokemonId { get; set; }
         public string Name { get; set; }
         public List<Move> Moves { get; set; }
+        public int Health { get; set; }
+        public int Attack { get; set; }
+        public int Defense { get; set; }
     }
 }
