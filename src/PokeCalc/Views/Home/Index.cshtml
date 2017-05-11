@@ -7,7 +7,20 @@
 }
 
 <h2>helloowo df hia hg</h2>
-<button class="btn btn-default" data-request-url="@Url.Action("GetMoves", "Moves")">Get Result :)</button>
+
+<form method="post" data-request-url="@Url.Action("GetMoves", "Moves")" class="first-pokemon">
+
+    <div class="form-group">
+        <label>Name or national dex number</label>
+        <input class="form-control first-chosen-pokemon" name="chosen-pokemon" type="text" />
+    </div>
+    <button class="btn btn-default" type="submit">Get Result :)</button>
+
+</form>
+
+<div class="result-name"></div>
+<div class="img-result"></div>
+<div class="result"></div>
 <script>
 
 </script>

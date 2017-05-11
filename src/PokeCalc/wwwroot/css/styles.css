@@ -1,0 +1,11 @@
+﻿body {
+}
+
+img {
+    width: 200px;
+}
+
+.center-image {
+    display: block;
+    margin: 0 auto;
+}
