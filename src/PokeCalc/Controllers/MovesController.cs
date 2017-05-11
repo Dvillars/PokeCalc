@@ -19,8 +19,8 @@ namespace PokeCalc.Controllers
 
         public IActionResult GetMoves(string searchQuery)
         {
-            string parsedSearch = searchQuery.Replace(" ", "+");
-            var result = Move.GetMoves("");
+            string lowercaseSearch = searchQuery.ToLower();
+            var result = Move.GetMoves(lowercaseSearch);
             return Json(result);
         }
     }

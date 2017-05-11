@@ -19,16 +19,16 @@ namespace PokeCalc.Models
         public string Name { get; set; }
         //public int Power { get; set; }
 
-        public static JArray GetMoves(string requeststring)
+        public static JObject GetMoves(string requestString)
         {
             var client = new RestClient("http://pokeapi.co/api/v2");
-            var request = new RestRequest("/pokemon/bulbasaur", Method.GET);
+            var request = new RestRequest("/pokemon/" + requestString, Method.GET);
             var response = new RestResponse();
             Task.Run(async () =>
             {
                 response = await GetResponseContentAsync(client, request) as RestResponse;
             }).Wait();
-            JArray result = JsonConvert.DeserializeObject<JArray>(response.Content);
+            JObject result = JsonConvert.DeserializeObject<JObject>(response.Content);
             return result;
         }
 
