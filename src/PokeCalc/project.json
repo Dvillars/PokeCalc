@@ -21,7 +21,8 @@
       "version": "1.0.0-preview2-final",
       "type": "build"
     },
-    "RestSharp.NetCore": "105.2.3"
+    "RestSharp.NetCore": "105.2.3",
+    "Newtonsoft.Json": "10.0.2"
   },
 
   "tools": {
